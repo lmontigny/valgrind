@@ -1,9 +1,11 @@
 # valgrind
 
 ## Commands
+```
 gcc -O0 main.c -masm=intel  -fno-asynchronous-unwind-tables -g
 valgrind --leak-check=yes ./a.out
 valgrind --tool=memcheck --leak-check=yes --show-reachable=yes --num-callers=20 --track-fds=yes
+```
 
 
 ## OUTPUT
